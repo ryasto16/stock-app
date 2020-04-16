@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stock App</title>
+    
+</head>
+<body>
+
+    <h1>Stock App</h1>
+
+    <label for="symbol">Enter a symbol:</label>
+    <input type="text" id="symbol">
+    <button type="button" onclick="fetchStockData(getElementById('symbol').value)">Enter</button>
+
+    <div class="chart-container" style="position: relative; height: 100vh; border: 1px solid black; margin: 5px;">
+        <canvas id="myChart"></canvas>
+    </div>
+    
+    
+</body>
+<script src="node_modules/chart.js/dist/Chart.js"></script>
+<script src="index.js"></script>
+</html>
